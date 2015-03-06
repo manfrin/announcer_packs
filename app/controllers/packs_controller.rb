@@ -29,6 +29,7 @@ class PacksController < ApplicationController
   # POST /packs.json
   def create
     @pack = Pack.new(pack_params)
+    @pack.user = current_user
 
     respond_to do |format|
       if @pack.save
