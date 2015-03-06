@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @pack.game %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @pack.user %>
+</p>
+
+<%= link_to 'Edit', edit_pack_path(@pack) %> |
+<%= link_to 'Back', packs_path %>
